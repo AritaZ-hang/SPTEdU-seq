@@ -49,7 +49,7 @@ def correct_barcodes(barcode_xdict, barcode_ydict, input_bam, output_bam):
 
                 if barcode_x in barcode_xdict and barcode_y in barcode_ydict:
                     filtered_line += 1
-                    barcode_corrected = barcode_x + barcode_y
+                    barcode_corrected = barcode_xdict[barcode_x] + barcode_ydict[barcode_y]
 
                     r.set_tag("XC", barcode_corrected)
                     r.set_tag("XM", umi)
