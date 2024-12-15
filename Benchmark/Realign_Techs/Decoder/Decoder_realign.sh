@@ -56,3 +56,15 @@ PAIRED_RUN=false
 ${dropseq_root}/TagReadWithGeneFunction I=merged.bam \
 O=star_gene_exon_tagged.bam \
 ANNOTATIONS_FILE=${genome_dir}/Mus_musculus.GRCm38.88.gtf
+
+## generate dge
+${dropseq_root}/DigitalExpression -m 8g \
+I=star_gene_exon_tagged.bam \
+CELL_BARCODE_TAG=XC \
+MOLECULAR_BARCODE_TAG=XM \
+O=decoder_dge.txt.gz \
+SUMMARY=decoder_dge.summary.txt \
+NUM_CORE_BARCODES=2500 \
+LOCUS_FUNCTION_LIST=INTRONIC \
+STRAND_STRATEGY=BOTH \
+TMP_DIR=.
