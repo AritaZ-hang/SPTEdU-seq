@@ -1,0 +1,2 @@
+We used rmats-turbo (v4.3.0) to identify five types of alternative splicing events in MOB (profiled by SPTT). The code in this folder contains two parts: one is the rMATs process for the comparison with fresh frozen MOB samples profiled by 10X Visium, and the other is the identification of significant alternative splicing events between different MOB regions. \
+The codes were inspired by Patho-DBit.
