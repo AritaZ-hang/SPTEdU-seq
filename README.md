@@ -1,2 +1,2 @@
-# SPTT
-Code Repository for our SPTT and Trace-SPTT analysis.
+# SPTEdU-seq
+Code Repository for our SPTEdu-seq
